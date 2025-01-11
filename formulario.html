@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje Espacial Ficticio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-100">
+
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">ViajeEspacial</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" id="menu"></ul>
+    </div>
+</nav>
+
+<main class="container my-4">
+    <section id="destinos" class="mb-5">
+        <h2 class="text-center mb-4">Elige tu destino</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/planeta1.jpg" class="card-img-top" alt="Marte">
+                    <div class="card-body">
+                        <h5 class="card-title">Marte</h5>
+                        <p class="card-text">Explora el planeta rojo y descubre sus paisajes misteriosos.</p>
+                        <button class="btn btn-primary w-100">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/planeta2.jpeg" class="card-img-top" alt="Galaxia Andrómeda">
+                    <div class="card-body">
+                        <h5 class="card-title">Galaxia Andrómeda</h5>
+                        <p class="card-text">Viaja a la galaxia más cercana a la Vía Láctea.</p>
+                        <button class="btn btn-primary w-100">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/planeta3.jpeg" class="card-img-top" alt="Titán">
+                    <div class="card-body">
+                        <h5 class="card-title">Titán</h5>
+                        <p class="card-text">Descubre la luna de Saturno con océanos de metano.</p>
+                        <button class="btn btn-primary w-100">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="misiones" class="mb-5">
+        <h2 class="text-center mb-4">Tipos de Misiones Espaciales</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Exploración</h5>
+                        <p class="card-text">Investiga nuevos planetas y recolecta datos científicos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Colonización</h5>
+                        <p class="card-text">Establece una base en un planeta o luna habitable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="duracion" class="mb-5">
+        <h2 class="text-center mb-4">Duración del Viaje</h2>
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="duracion" class="form-label">Selecciona la duración</label>
+                    <select id="duracion" class="form-select">
+                        <option value="1">1 Mes</option>
+                        <option value="6">6 Meses</option>
+                        <option value="12">1 Año</option>
+                        <option value="60">5 Años</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section id="recursos">
+        <h2 class="text-center mb-4">Recursos y Tecnología</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Inteligencia Artificial</h5>
+                        <p class="card-text">Tecnología avanzada para pilotaje y análisis de datos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Recursos de Energía</h5>
+                        <p class="card-text">Energía nuclear y solar para sustentar la misión.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sistema de Soporte Vital</h5>
+                        <p class="card-text">Asegura oxígeno, agua y alimentos para la tripulación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="container my-5 text-center">
+    <h2 class="mb-4">Síguenos en Redes Sociales</h2>
+    <div class="d-flex justify-content-center gap-4">
+        <a href="https://facebook.com" class="text-decoration-none text-primary fs-3" target="_blank">
+            <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com" class="text-decoration-none text-info fs-3" target="_blank">
+            <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://instagram.com" class="text-decoration-none text-danger fs-3" target="_blank">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://linkedin.com" class="text-decoration-none text-primary fs-3" target="_blank">
+            <i class="bi bi-linkedin"></i>
+        </a>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+<script src="js/main.js"></script> 
+<script>
+    const xhr=new XMLHttpRequest();
+			xhr.open("GET", "xml/menu.xml", true);
+			xhr.onload = function() {
+        if (xhr.status === 200) {
+              const xmlDoc = xhr.responseXML;
+              const items = xmlDoc.getElementsByTagName("item");
+              let menuHTML="";
+              for (let i = 0; i < items.length; i++) {
+                  const nombre = items[i].getElementsByTagName("nombre")[0].textContent;
+                  const link = items[i].getElementsByTagName("link")[0].textContent;
+                  menuHTML+=`
+                      <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="${link}">${nombre}</a>
+                      </li>
+                      `;
+              }
+              document.getElementById("menu").innerHTML=menuHTML;
+          }
+          else {
+              console.error("Error");
+          }
+      };
+      xhr.send();
+</script>
+</body> 
+</html> 

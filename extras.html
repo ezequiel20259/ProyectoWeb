@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje Espacial Ficticio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">ViajeEspacial</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav" id="menu">
+                <!--Aqui mi XML-->
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container my-5">
+    <section>
+        <h2 class="section-title text-center">Videos sobre Misiones Espaciales Ficticias</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="video-thumbnail">
+                    <iframe class="w-100 rounded" height="315" src="https://www.youtube.com/watch?v=BjyhhV_ghc8" title="Video viaje" allowfullscreen></iframe> 
+                    
+                    <h5 class="mt-3">Explorando Marte</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="video-thumbnail">
+                    <iframe class="w-100 rounded" height="315" src="https://www.youtube.com/watch?v=LdEKKrmGmpM" title="Video viaje2" allowfullscreen></iframe> 
+                    <h5 class="mt-3">Viaje a Andrómeda</h5>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="video-thumbnail">
+                    <iframe class="w-100 rounded" height="315" src="https://www.youtube.com/watch?v=FjWXrVMdxzQ" title="Video viaje3" allowfullscreen></iframe> 
+                    <h5 class="mt-3">Vida en Alpha Centauri</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title text-center">Artículos sobre Exploración Espacial</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="img/img4.avif" class="card-img-top" alt="Artículo 1">
+                    <div class="card-body">
+                        <h5 class="card-title">El Futuro de la Colonización Espacial</h5>
+                        <p class="card-text">Descubre cómo las tecnologías emergentes están allanando el camino para la colonización de otros planetas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="img/img5.webp" class="card-img-top" alt="Artículo 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Los Desafíos de Viajar Más Allá de la Luna</h5>
+                        <p class="card-text">Exploramos los principales retos tecnológicos y científicos para misiones interplanetarias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title text-center">Consejos para Construir una Historia Espacial</h2>
+        <ul class="list-group mt-4">
+            <li class="list-group-item">Investiga los conceptos básicos de la astronomía y física espacial.</li>
+            <li class="list-group-item">Crea personajes con motivaciones claras y fuertes conexiones emocionales.</li>
+            <li class="list-group-item">Diseña mundos únicos con detalles culturales, tecnológicos y políticos.</li>
+            <li class="list-group-item">Incorpora conflictos relevantes como supervivencia, exploración y descubrimiento.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="section-title text-center">Recomendaciones sobre Juegos de Simulación Espacial</h2>
+        <div class="row mt-4">
+            <div class="col-md-3">
+                <h5>Kerbal Space Program</h5>
+                <p>Un juego educativo que te permite construir y lanzar cohetes.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Elite Dangerous</h5>
+                <p>Explora la galaxia en un simulador de vuelo espacial masivo.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>No Man's Sky</h5>
+                <p>Una aventura en un universo infinito con exploración y construcción.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Star Citizen</h5>
+                <p>Un simulador de combate espacial en desarrollo con gráficos impresionantes.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script>
+    const xhr=new XMLHttpRequest();
+			xhr.open("GET", "xml/menu.xml", true);
+			xhr.onload = function() {
+        if (xhr.status === 200) {
+              const xmlDoc = xhr.responseXML;
+              const items = xmlDoc.getElementsByTagName("item");
+              let menuHTML="";
+              for (let i = 0; i < items.length; i++) {
+                  const nombre = items[i].getElementsByTagName("nombre")[0].textContent;
+                  const link = items[i].getElementsByTagName("link")[0].textContent;
+                  menuHTML+=`
+                      <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="${link}">${nombre}</a>
+                      </li>
+                      `;
+              }
+              document.getElementById("menu").innerHTML=menuHTML;
+          }
+          else {
+              console.error("Error");
+          }
+      };
+      xhr.send();
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+    "es": {
+        "title": "Viaje Espacial Ficticio",
+        "welcome": "Bienvenido al Configurador de Viaje Espacial",
+        "description": "Explora las infinitas posibilidades del universo con nuestro simulador de viaje espacial. Diseña tu propia aventura interestelar y personaliza cada detalle de tu misión.",
+        "purposeTitle": "Propósito del Viaje Espacial Ficticio",
+        "purposeDescription": "Nuestro configurador te permite imaginar y diseñar viajes espaciales como si fueran reales. Es ideal para soñadores, entusiastas de la ciencia ficción, o simplemente curiosos que desean explorar el cosmos desde una nueva perspectiva.",
+        "purposeList": [
+            "Promover la creatividad e imaginación.",
+            "Fomentar el interés en la ciencia y la tecnología espacial.",
+            "Divertirte mientras diseñas tu propio viaje interestelar."
+        ],
+        "howItWorksTitle": "¿Cómo Funciona el Simulador de Viaje?",
+        "howItWorksDescription": "El configurador está diseñado para ser fácil y divertido de usar. Solo sigue estos pasos:",
+        "howItWorksSteps": [
+            "Selecciona tu destino: Elige entre planetas, galaxias y misiones ficticias.",
+            "Diseña tu nave: Personaliza cada detalle, desde la tecnología hasta el diseño interior.",
+            "Explora: Visualiza y comparte tu viaje espacial ficticio con amigos."
+        ],
+        "followUs": "Síguenos en Nuestras Redes Sociales"
+    },
+    "en": {
+        "title": "Fictional Space Travel",
+        "welcome": "Welcome to the Space Travel Configurator",
+        "description": "Explore the infinite possibilities of the universe with our space travel simulator. Design your own interstellar adventure and customize every detail of your mission.",
+        "purposeTitle": "Purpose of the Fictional Space Travel",
+        "purposeDescription": "Our configurator lets you imagine and design space journeys as if they were real. It's perfect for dreamers, science fiction enthusiasts, or simply curious minds eager to explore the cosmos from a new perspective.",
+        "purposeList": [
+            "Promote creativity and imagination.",
+            "Encourage interest in space science and technology.",
+            "Have fun while designing your interstellar journey."
+        ],
+        "howItWorksTitle": "How Does the Space Simulator Work?",
+        "howItWorksDescription": "The configurator is designed to be easy and fun to use. Just follow these steps:",
+        "howItWorksSteps": [
+            "Select your destination: Choose between planets, galaxies, and fictional missions.",
+            "Design your spaceship: Customize every detail, from technology to interior design.",
+            "Explore: Visualize and share your fictional space journey with friends."
+        ],
+        "followUs": "Follow Us on Our Social Media"
+    }
+}

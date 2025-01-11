@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "destino": "Planeta Marte",
+        "tipoMision": "Exploración",
+        "duracion": 180,
+        "recursos": "Tecnología avanzada para análisis planetario"
+    },
+    {
+        "id": 2,
+        "destino": "Galaxia Andrómeda",
+        "tipoMision": "Colonización",
+        "duracion": 720,
+        "recursos": "Nave espacial de gran capacidad"
+    },
+    {
+        "id": 3,
+        "destino": "Luna de Júpiter",
+        "tipoMision": "Exploración",
+        "duracion": 60,
+        "recursos": "Equipos para mapeo lunar"
+    }
+]
