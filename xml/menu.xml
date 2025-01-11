@@ -4,6 +4,10 @@
         <nombre>Inicio</nombre>
         <link>index.html</link>
     </item>
+        <item>
+        <nombre>Lista Viajes</nombre>
+        <link>lista.html</link>
+    </item>
     <item>
         <nombre>Selección de Destino</nombre>
         <link>formulario.html</link>
@@ -12,10 +16,7 @@
         <nombre>Diseño de la Nave Espacial</nombre>
         <link>navespacial.html</link>
     </item>
-    <item>
-        <nombre>Lista Viajes</nombre>
-        <link>lista.html</link>
-    </item>
+
     <item>
         <nombre>Comunidad</nombre>
         <link>comunidad.html</link>
